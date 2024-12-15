@@ -12,7 +12,7 @@ var http = require('http');
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3001');
+var port = normalizePort(process.env.PORT || '3004');
 app.set('port', port);
 
 /**
@@ -87,6 +87,6 @@ function onListening() {
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
-  console.log('服务端程序已启动，监听端口为3001');
+  console.log('服务端程序已启动，监听端口为3004');
 
 }
